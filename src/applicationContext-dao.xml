@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!--  配置dao 的bean -->
+<!--  登陆的bean -->
+<bean id="SysUserDao" class="com.baidu.dao.IMPL.SysUserDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>	<!-- 销售机会bean -->	
+<bean id="SaleChanceDao" class="com.baidu.dao.IMPL.SaleChanceDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>		<!-- 配置客户开发计划bean -->
+<bean id="SalPlanDao" class="com.baidu.dao.IMPL.SalPlanDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>	<!-- 客户信息管理bean -->
+<bean id="CstCustomerDao" class="com.baidu.dao.IMPL.CstCustomerDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean><!-- 联系人bean -->
+<bean id="CstlinkmanDao" class="com.baidu.dao.IMPL.CstlinkmanDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean><!-- 交往记录bean -->
+<bean id="ActivityDao" class="com.baidu.dao.IMPL.CstActivityDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean><!-- 历史订单bean -->
+<bean id="CsOrdersDao" class="com.baidu.dao.IMPL.CsOrdersDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>	<!-- 客户流失管理bean -->
+<bean id="CstlostDao" class="com.baidu.dao.IMPL.CstlostDaoIMPL">
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>
+<!--易盼  -->
+	<!-- 配置dao -->
+	<bean id="basdictdao" class="com.baidu.dao.IMPL.BasdictDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="productdao" class="com.baidu.dao.IMPL.ProductDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="storagedao" class="com.baidu.dao.IMPL.StorageDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="cstservicedao" class="com.baidu.dao.IMPL.CstserviceDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="orderdao" class="com.baidu.dao.IMPL.OrderDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+
+	<bean id="assigndao" class="com.baidu.dao.IMPL.AssignDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="dealdao" class="com.baidu.dao.IMPL.DealDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="feedbackdao" class="com.baidu.dao.IMPL.FeedbackDaoIMPL">
+	<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+		<!--  <bean id="sysuserdao" class="com.baidu.dao.IMPL.SysUserDaoIMPL">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean> -->
+</beans>

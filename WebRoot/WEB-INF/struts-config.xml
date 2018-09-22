@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    <form-bean name="sysUserForm" type="com.baidu.struts.form.SysUserForm" />
+    <form-bean name="saleChanceForm" type="com.baidu.struts.form.SaleChanceForm" />
+    <form-bean name="salPlanForm" type="com.baidu.struts.form.SalPlanForm" />
+    <form-bean name="cstCustomerForm" type="com.baidu.struts.form.CstCustomerForm" />
+
+    <form-bean name="basdictForm" type="com.baidu.struts.form.BasdictForm"></form-bean>
+    <form-bean name="productForm" type="com.baidu.struts.form.ProductForm" />
+    <form-bean name="storageForm" type="com.baidu.struts.form.StorageForm" />
+   <!--  <form-bean name="sysuserForm" type="com.baidu.struts.form.SysuserMaForm" />--> 
+    <form-bean name="serviceForm" type="com.baidu.struts.form.ServiceForm" />
+
+
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="sysUserForm"
+      name="sysUserForm"
+      parameter="type"
+      path="/sysUser"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" />
+    <action
+      attribute="saleChanceForm"
+      name="saleChanceForm"
+      parameter="type"
+      path="/saleChance"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true"
+      validate="false" />
+    <action
+      attribute="salPlanForm"
+      name="salPlanForm"
+      parameter="type"
+      path="/salPlan"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" 
+      validate="false"/>
+    <action
+      attribute="cstCustomerForm"
+      name="cstCustomerForm"
+      parameter="type"
+      path="/cstCustomer"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true"
+      validate="false" />
+    <action
+      attribute="cstCustomerForm"
+      name="cstCustomerForm"
+      parameter="type"
+      path="/cstlost"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true"
+      validate="false" /> <!-- 易盼 -->
+      <!-- 服务 -->
+      
+    <action
+      name="basdictForm"
+      parameter="flag"
+      path="/basdict"
+      scope="request"
+      validate="false"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+      
+    <action
+      name="productForm"
+      parameter="flag"
+      validate="false"
+      path="/product"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+      
+    <action
+      name="storageForm"
+      path="/storage"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request"
+      parameter="flag"
+      validate="false"
+      cancellable="true" />
+      
+    <action
+      name="serviceForm"
+      parameter="flag"
+      path="/cstservice"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request"
+      validate="false"
+      cancellable="true" />
+      
+    <action
+      parameter="flag"
+      path="/order"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request"
+      validate="false"
+      cancellable="true" />
+      
+    <action
+      name="serviceForm"
+      parameter="flag"
+      path="/assign"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" />
+      
+    <action
+      name="serviceForm"
+      parameter="flag"
+      path="/deal"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" />
+      
+    <action
+      name="serviceForm"
+      parameter="flag"
+      path="/feedback"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" />
+      
+<!--   
+    <action
+      name="sysuserForm"
+      parameter="flag"
+      path="/sysuser"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" /> 
+      
+    <action
+      parameter="flag"
+      path="/cstlost"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" /> 
+      
+      <action
+      parameter="flag"
+      path="/cstcustomer"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      validate="false"
+      cancellable="true" />  --> 
+      
+  </action-mappings>
+
+  <message-resources parameter="com.baidu.struts.ApplicationResources" />
+</struts-config>
+

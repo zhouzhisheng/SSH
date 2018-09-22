@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/sysUser.do" location="30,15" dimension="261,104" />
+  <StrutsActivity path="/saleChance.do" location="330,15" dimension="286,106" />
+  <StrutsActivity path="/salPlan.do" location="30,135" dimension="256,119" />
+  <StrutsActivity path="/cstCustomer.do" location="330,150" dimension="289,104" />
+  <StrutsActivity path="/cstlost.do" location="645,150" dimension="254,104" />
+  <StrutsActivity path="/basdict.do" location="950,150" dimension="362,104" />
+  <StrutsActivity path="/product.do" location="50,350" dimension="362,104" />
+  <StrutsActivity path="/storage.do" location="650,350" dimension="362,104" />
+  <StrutsActivity path="/cstservice.do" location="50,550" dimension="362,104" />
+  <StrutsActivity path="/order.do" location="50,750" dimension="362,104" />
+  <StrutsActivity path="/assign.do" location="650,950" dimension="362,104" />
+  <StrutsActivity path="/deal.do" location="50,1150" dimension="362,104" />
+  <StrutsActivity path="/feedback.do" location="650,1150" dimension="362,104" />
+</FlowViewLayout>
+

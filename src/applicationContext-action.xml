@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!--  配置Action 的bean -->
+<bean name="/sysUser" class="com.baidu.struts.action.SysUserAction">
+<property name="sysUserBiz" ref="SysUserBiz"></property>
+</bean>	<!-- 配置 销售机会的bean -->	
+<bean name="/saleChance" class="com.baidu.struts.action.SaleChanceAction">
+<property name="saleChanceBiz" ref="saleChanceBiz"></property>
+<property name="sysuser" ref="SysUserBiz"></property>
+</bean><!-- 配置客户开发计划bean  -->
+<bean name="/salPlan" class="com.baidu.struts.action.SalPlanAction">
+<property name="salplanBiz" ref="SalPlanBiz"></property>
+</bean>	<!-- 配置客户信息管理bean -->
+<bean name="/cstCustomer" class="com.baidu.struts.action.CstCustomerAction">
+<property name="cscustomer" ref="CstCustomerBiz"></property>
+<property name="csctlink" ref="CstlinkmanBiz"></property>
+<property name="activity" ref="ActivityBiz"></property>
+<property name="csOrerBiz" ref="CsOrdersBiz"></property>
+</bean><!-- 配置客户流失管理bean -->	
+<bean name="/cstlost" class="com.baidu.struts.action.CstlostAction">
+<property name="cstlostBiz" ref="CstlostBiz"></property>
+</bean><!--易盼的bean  -->	
+	<!--配置action -->
+	<bean name="/basdict" class="com.baidu.struts.action.BasdictAction">
+		<property name="basdictBiz" ref="basdictBiz"></property>
+	</bean>
+
+	<bean name="/product" class="com.baidu.struts.action.ProductAction">
+		<property name="productBiz" ref="productBiz"></property>
+	</bean>
+
+	<bean name="/storage" class="com.baidu.struts.action.StorageAction">
+		<property name="storageBiz" ref="storageBiz"></property>
+	</bean>
+
+	<bean name="/cstservice" class="com.baidu.struts.action.CstserviceAction">
+		<property name="cstserviceBiz" ref="cstserviceBiz"></property>
+	</bean>
+
+	<bean name="/order" class="com.baidu.struts.action.OrderAction">
+		<property name="orderBiz" ref="orderBiz"></property>
+	</bean>
+
+	<bean name="/assign" class="com.baidu.struts.action.AssignAction">
+		<property name="assignBiz" ref="assignBiz"></property>
+	</bean>
+
+	<bean name="/deal" class="com.baidu.struts.action.DealAction">
+		<property name="dealBiz" ref="dealBiz"></property>
+	</bean>
+	
+	<bean name="/feedback" class="com.baidu.struts.action.FeedbackAction">
+	<property name="feedbackBiz" ref="feedbackBiz"></property>
+	</bean>
+	
+	
+	
+</beans>

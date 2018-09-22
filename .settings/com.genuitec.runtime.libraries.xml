@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <add-on id="spring.support"/>
+  <add-on id="spring.persistence"/>
+  <add-on id="hibernate.emanager"/>
+  <add-on id="spring.web"/>
+  <add-on id="spring.persistence.jdo"/>
+  <add-on id="spring.persistence.jdbc"/>
+  <add-on id="spring.j2ee_2.5"/>
+  <add-on id="spring.aop"/>
+  <add-on id="spring.persistence.ibatis"/>
+</project>

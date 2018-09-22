@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!--  配置biz 的bean -->
+<!-- 登陆的biz -->
+<bean id="SysUserBiz" class="com.baidu.biz.IMPL.SysUserBizIMPL">
+<property name="sysUserDao" ref="SysUserDao"></property>
+</bean> <!--销售机会bizbean-->
+<bean id="saleChanceBiz" class="com.baidu.biz.IMPL.SaleChanceBizIMPL">
+<property name="saleChance" ref="SaleChanceDao"></property>
+</bean>	<!-- 配置客户开发计划beanBiz -->		
+<bean id="SalPlanBiz" class="com.baidu.biz.IMPL.SalPlanBizIMPL">
+<property name="salPlandao" ref="SalPlanDao"></property>
+</bean>	<!-- 配置客户信息管理bean -->
+<bean id="CstCustomerBiz" class="com.baidu.biz.IMPL.CstCustomerBizIMPL">
+<property name="cstcustomerDao" ref="CstCustomerDao"></property>	
+</bean><!-- 联系人bean -->
+<bean id="CstlinkmanBiz" class="com.baidu.biz.IMPL.CstlinkmanBizIMPL">
+<property name="cstlinkmanDao" ref="CstlinkmanDao"></property>
+</bean><!-- 交往记录bean -->
+<bean id="ActivityBiz" class="com.baidu.biz.IMPL.ActivityBizIMPL">
+<property name="actvitydao" ref="ActivityDao"></property>
+</bean><!-- 历史订单bean -->
+<bean id="CsOrdersBiz" class="com.baidu.biz.IMPL.CsOrdersBizIMPL">
+<property name="csOrders" ref="CsOrdersDao"></property>
+</bean><!-- 配置客户流失管理bean -->
+<bean id="CstlostBiz" class="com.baidu.biz.IMPL.CstlostBizIMPL">
+<property name="cstlostDao" ref="CstlostDao"></property>
+</bean>
+<!-- 易盼 -->
+  <!-- 配置biz -->
+	<bean id="basdictBiz" class="com.baidu.biz.IMPL.BasdictBizIMPL">
+		<property name="basdictDao" ref="basdictdao"></property>
+	</bean>
+
+	<bean id="productBiz" class="com.baidu.biz.IMPL.ProductBizIMPL">
+		<property name="productDao" ref="productdao"></property>
+	</bean>
+
+	<bean id="storageBiz" class="com.baidu.biz.IMPL.StorageBizIMPL">
+		<property name="storageDao" ref="storagedao"></property>
+	</bean>
+
+	<bean id="cstserviceBiz" class="com.baidu.biz.IMPL.CstserviceBizIMPL">
+		<property name="cstserviceDao" ref="cstservicedao"></property>
+	</bean>
+
+	<bean id="orderBiz" class="com.baidu.biz.IMPL.OrderBizIMPL">
+		<property name="orderDao" ref="orderdao"></property>
+	</bean>
+	
+	<bean id="assignBiz" class="com.baidu.biz.IMPL.AssignBizIMPL">
+		<property name="assignDao" ref="assigndao"></property>
+	</bean>
+
+	<bean id="dealBiz" class="com.baidu.biz.IMPL.DealBizIMPL">
+		<property name="dealDao" ref="dealdao"></property>
+	</bean>
+
+	<bean id="feedbackBiz" class="com.baidu.biz.IMPL.FeedbackBizIMPL">
+		<property name="feedbackDao" ref="feedbackdao"></property>
+	</bean>
+	
+  <!-- 	<bean id="sysuserBiz" class="com.baidu.biz.IMPL.SysUserBizIMPL">
+		<property name="sysuserDao" ref="sysuserdao"></property>
+	</bean> --> 
+</beans>
