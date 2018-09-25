@@ -10,3 +10,5 @@ SSH 项目系统
 前端:javascript+Ajax
 
 项目使用SVN
+
+项目使用微软:SQL Server数据库
