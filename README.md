@@ -1,7 +1,6 @@
-# SSH
-SSH 项目系统
+# SSH客户关系系统
 
-项目是本人在培训期间做的项目
+SSH 客户关系系统
 
 项目采用Struts1.2 hibernate3.3 spring 2.5 jstl1.2.1
 
