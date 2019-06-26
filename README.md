@@ -6,7 +6,7 @@ SSH 客户关系系统
 
 开发工具:myeclipse + jdk1.7
 
-前端:javascript+Ajax+JQuery
+前端:javascript+Ajax+Query
 
 项目使用SVN
 
