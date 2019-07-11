@@ -24,7 +24,8 @@
 </bean><!-- 配置客户流失管理bean -->	
 <bean name="/cstlost" class="com.baidu.struts.action.CstlostAction">
 <property name="cstlostBiz" ref="CstlostBiz"></property>
-</bean><!--易盼的bean  -->	
+</bean>
+	
 	<!--配置action -->
 	<bean name="/basdict" class="com.baidu.struts.action.BasdictAction">
 		<property name="basdictBiz" ref="basdictBiz"></property>
